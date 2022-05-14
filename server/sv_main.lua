@@ -41,3 +41,8 @@ AddEventHandler('bottle:setVehicleOwned', function (vehicleProps)
         TriggerClientEvent('esx:showNotification', _source, 'Sait ajoneuvon kilvellä '..vehicleProps.plate)
     end)
 end)
+
+RegisterServerEvent('bottle:eiitemiä')
+AddEventHandler('bottle:eiitemiä', function ()
+    DropPlayer(source, "TOSIJAAN NYT OLI KYLL")
+end)
